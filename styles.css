@@ -1,0 +1,65 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #333; /* Donkere achtergrondkleur */
+    color: #fff; /* Tekstkleur */
+    min-height: 100vh;
+    min-width: 100vw;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+}
+
+.quiz-container {
+    text-align: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('halloween-background.avif'); /* Voeg een passende achtergrondafbeelding toe */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Plaats de knoppen naast elkaar */
+    flex-wrap: wrap; /* Laat de knoppen naar een nieuwe rij gaan als er niet genoeg ruimte is */
+    justify-content: center; /* Centreer de knoppen horizontaal */
+    margin-bottom: 25px;
+}
+
+li {
+    margin: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff6600; /* Oranje kleur voor de knoppen */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    margin: 5px; /* Voeg wat ruimte tussen de knoppen toe */
+}
+
+#next-btn {
+    display: none;
+}
+
+/* Responsieve aanpassingen */
+@media screen and (max-width: 768px) {
+    .quiz-container {
+        padding: 10px; /* Verminder de padding voor kleinere schermen */
+        width: 90%; /* Aanpassing van de breedte voor kleinere schermen */
+    }
+
+    button {
+        padding: 8px 16px; /* Verminder de knoppadding voor kleinere schermen */
+        font-size: 14px; /* Verklein de knoptekst voor kleinere schermen */
+    }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quiz Spel - Halloween Thema</title>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1 id="round-name">Welkom bij de Halloween Quiz</h1>
+        <button id="start-round-btn" onclick="start()">Start</button>
+        <h2 id="question" style="display: none;"></h2>
+        <img id="question-image" src="" alt="Vraagafbeelding" style="display: none;">
+        <ul id="answers"  style="display: none;">
+        </ul>
+        <div id="next-btn-wrapper" style="
+        height: 50px;
+        display: flex;
+        justify-content: right;
+        display: none;
+    ">
+            <button id="next-btn" onclick="nextQuestion()">Volgende</button>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
